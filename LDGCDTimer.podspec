@@ -9,6 +9,6 @@ s.author = { 'alexiiio' => '450145524@qq.com' }
 s.source = { :git => "https://github.com/alexiiio/LDGCDTimer.git", :tag => "v0.0.1"}
 s.requires_arc = true
 s.ios.deployment_target = '7.0'
-s.source_files = 'LDGCDTimer/LDGCDTimerManager/*.{h,m}'
+s.source_files = 'LDGCDTimer/LDGCDTimer/*.{h,m}'
 s.frameworks = 'UIKit'
 end
