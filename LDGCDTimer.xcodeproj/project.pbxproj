@@ -7,32 +7,32 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		02E50A3921A580EF009CA245 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 02E50A3821A580EF009CA245 /* AppDelegate.m */; };
-		02E50A3C21A580EF009CA245 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 02E50A3B21A580EF009CA245 /* ViewController.m */; };
-		02E50A3F21A580EF009CA245 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 02E50A3D21A580EF009CA245 /* Main.storyboard */; };
-		02E50A4121A580F1009CA245 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 02E50A4021A580F1009CA245 /* Assets.xcassets */; };
-		02E50A4421A580F1009CA245 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 02E50A4221A580F1009CA245 /* LaunchScreen.storyboard */; };
-		02E50A4721A580F1009CA245 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 02E50A4621A580F1009CA245 /* main.m */; };
-		02E50A4F21A58123009CA245 /* LDGCDTimer.m in Sources */ = {isa = PBXBuildFile; fileRef = 02E50A4E21A58122009CA245 /* LDGCDTimer.m */; };
+		02E50A5E21A6C1AE009CA245 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 02E50A5D21A6C1AE009CA245 /* AppDelegate.m */; };
+		02E50A6121A6C1AE009CA245 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 02E50A6021A6C1AE009CA245 /* ViewController.m */; };
+		02E50A6421A6C1AE009CA245 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 02E50A6221A6C1AE009CA245 /* Main.storyboard */; };
+		02E50A6621A6C1AF009CA245 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 02E50A6521A6C1AF009CA245 /* Assets.xcassets */; };
+		02E50A6921A6C1AF009CA245 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 02E50A6721A6C1AF009CA245 /* LaunchScreen.storyboard */; };
+		02E50A6C21A6C1AF009CA245 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 02E50A6B21A6C1AF009CA245 /* main.m */; };
+		02E50A7521A6C1F6009CA245 /* LDGCDTimer.m in Sources */ = {isa = PBXBuildFile; fileRef = 02E50A7321A6C1F6009CA245 /* LDGCDTimer.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		02E50A3421A580EF009CA245 /* LDGDCTimer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LDGDCTimer.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		02E50A3721A580EF009CA245 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
-		02E50A3821A580EF009CA245 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		02E50A3A21A580EF009CA245 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		02E50A3B21A580EF009CA245 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
-		02E50A3E21A580EF009CA245 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		02E50A4021A580F1009CA245 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		02E50A4321A580F1009CA245 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		02E50A4521A580F1009CA245 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		02E50A4621A580F1009CA245 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		02E50A4D21A58122009CA245 /* LDGCDTimer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LDGCDTimer.h; sourceTree = "<group>"; };
-		02E50A4E21A58122009CA245 /* LDGCDTimer.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LDGCDTimer.m; sourceTree = "<group>"; };
+		02E50A5921A6C1AE009CA245 /* LDGCDTimer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LDGCDTimer.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		02E50A5C21A6C1AE009CA245 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		02E50A5D21A6C1AE009CA245 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		02E50A5F21A6C1AE009CA245 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		02E50A6021A6C1AE009CA245 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		02E50A6321A6C1AE009CA245 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		02E50A6521A6C1AF009CA245 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		02E50A6821A6C1AF009CA245 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		02E50A6A21A6C1AF009CA245 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		02E50A6B21A6C1AF009CA245 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		02E50A7321A6C1F6009CA245 /* LDGCDTimer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LDGCDTimer.m; sourceTree = "<group>"; };
+		02E50A7421A6C1F6009CA245 /* LDGCDTimer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LDGCDTimer.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		02E50A3121A580EF009CA245 /* Frameworks */ = {
+		02E50A5621A6C1AE009CA245 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -42,75 +42,83 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		02E50A2B21A580EF009CA245 = {
+		02E50A5021A6C1AE009CA245 = {
 			isa = PBXGroup;
 			children = (
-				02E50A3621A580EF009CA245 /* LDGDCTimer */,
-				02E50A3521A580EF009CA245 /* Products */,
+				02E50A5B21A6C1AE009CA245 /* LDGCDTimer */,
+				02E50A5A21A6C1AE009CA245 /* Products */,
 			);
 			sourceTree = "<group>";
 		};
-		02E50A3521A580EF009CA245 /* Products */ = {
+		02E50A5A21A6C1AE009CA245 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				02E50A3421A580EF009CA245 /* LDGDCTimer.app */,
+				02E50A5921A6C1AE009CA245 /* LDGCDTimer.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		02E50A3621A580EF009CA245 /* LDGDCTimer */ = {
+		02E50A5B21A6C1AE009CA245 /* LDGCDTimer */ = {
 			isa = PBXGroup;
 			children = (
-				02E50A3721A580EF009CA245 /* AppDelegate.h */,
-				02E50A3821A580EF009CA245 /* AppDelegate.m */,
-				02E50A3A21A580EF009CA245 /* ViewController.h */,
-				02E50A3B21A580EF009CA245 /* ViewController.m */,
-				02E50A4D21A58122009CA245 /* LDGCDTimer.h */,
-				02E50A4E21A58122009CA245 /* LDGCDTimer.m */,
-				02E50A3D21A580EF009CA245 /* Main.storyboard */,
-				02E50A4021A580F1009CA245 /* Assets.xcassets */,
-				02E50A4221A580F1009CA245 /* LaunchScreen.storyboard */,
-				02E50A4521A580F1009CA245 /* Info.plist */,
-				02E50A4621A580F1009CA245 /* main.m */,
+				02E50A5C21A6C1AE009CA245 /* AppDelegate.h */,
+				02E50A5D21A6C1AE009CA245 /* AppDelegate.m */,
+				02E50A5F21A6C1AE009CA245 /* ViewController.h */,
+				02E50A6021A6C1AE009CA245 /* ViewController.m */,
+				02E50A7221A6C1F6009CA245 /* LDGCDTimer */,
+				02E50A6221A6C1AE009CA245 /* Main.storyboard */,
+				02E50A6521A6C1AF009CA245 /* Assets.xcassets */,
+				02E50A6721A6C1AF009CA245 /* LaunchScreen.storyboard */,
+				02E50A6A21A6C1AF009CA245 /* Info.plist */,
+				02E50A6B21A6C1AF009CA245 /* main.m */,
 			);
-			path = LDGDCTimer;
+			path = LDGCDTimer;
+			sourceTree = "<group>";
+		};
+		02E50A7221A6C1F6009CA245 /* LDGCDTimer */ = {
+			isa = PBXGroup;
+			children = (
+				02E50A7421A6C1F6009CA245 /* LDGCDTimer.h */,
+				02E50A7321A6C1F6009CA245 /* LDGCDTimer.m */,
+			);
+			path = LDGCDTimer;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		02E50A3321A580EF009CA245 /* LDGDCTimer */ = {
+		02E50A5821A6C1AE009CA245 /* LDGCDTimer */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 02E50A4A21A580F1009CA245 /* Build configuration list for PBXNativeTarget "LDGDCTimer" */;
+			buildConfigurationList = 02E50A6F21A6C1AF009CA245 /* Build configuration list for PBXNativeTarget "LDGCDTimer" */;
 			buildPhases = (
-				02E50A3021A580EF009CA245 /* Sources */,
-				02E50A3121A580EF009CA245 /* Frameworks */,
-				02E50A3221A580EF009CA245 /* Resources */,
+				02E50A5521A6C1AE009CA245 /* Sources */,
+				02E50A5621A6C1AE009CA245 /* Frameworks */,
+				02E50A5721A6C1AE009CA245 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
-			name = LDGDCTimer;
-			productName = LDGDCTimer;
-			productReference = 02E50A3421A580EF009CA245 /* LDGDCTimer.app */;
+			name = LDGCDTimer;
+			productName = LDGCDTimer;
+			productReference = 02E50A5921A6C1AE009CA245 /* LDGCDTimer.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		02E50A2C21A580EF009CA245 /* Project object */ = {
+		02E50A5121A6C1AE009CA245 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
 				LastUpgradeCheck = 1010;
 				ORGANIZATIONNAME = Li;
 				TargetAttributes = {
-					02E50A3321A580EF009CA245 = {
+					02E50A5821A6C1AE009CA245 = {
 						CreatedOnToolsVersion = 10.1;
 					};
 				};
 			};
-			buildConfigurationList = 02E50A2F21A580EF009CA245 /* Build configuration list for PBXProject "LDGDCTimer" */;
+			buildConfigurationList = 02E50A5421A6C1AE009CA245 /* Build configuration list for PBXProject "LDGCDTimer" */;
 			compatibilityVersion = "Xcode 9.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -118,56 +126,56 @@
 				en,
 				Base,
 			);
-			mainGroup = 02E50A2B21A580EF009CA245;
-			productRefGroup = 02E50A3521A580EF009CA245 /* Products */;
+			mainGroup = 02E50A5021A6C1AE009CA245;
+			productRefGroup = 02E50A5A21A6C1AE009CA245 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				02E50A3321A580EF009CA245 /* LDGDCTimer */,
+				02E50A5821A6C1AE009CA245 /* LDGCDTimer */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		02E50A3221A580EF009CA245 /* Resources */ = {
+		02E50A5721A6C1AE009CA245 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				02E50A4421A580F1009CA245 /* LaunchScreen.storyboard in Resources */,
-				02E50A4121A580F1009CA245 /* Assets.xcassets in Resources */,
-				02E50A3F21A580EF009CA245 /* Main.storyboard in Resources */,
+				02E50A6921A6C1AF009CA245 /* LaunchScreen.storyboard in Resources */,
+				02E50A6621A6C1AF009CA245 /* Assets.xcassets in Resources */,
+				02E50A6421A6C1AE009CA245 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		02E50A3021A580EF009CA245 /* Sources */ = {
+		02E50A5521A6C1AE009CA245 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				02E50A3C21A580EF009CA245 /* ViewController.m in Sources */,
-				02E50A4721A580F1009CA245 /* main.m in Sources */,
-				02E50A4F21A58123009CA245 /* LDGCDTimer.m in Sources */,
-				02E50A3921A580EF009CA245 /* AppDelegate.m in Sources */,
+				02E50A6121A6C1AE009CA245 /* ViewController.m in Sources */,
+				02E50A6C21A6C1AF009CA245 /* main.m in Sources */,
+				02E50A7521A6C1F6009CA245 /* LDGCDTimer.m in Sources */,
+				02E50A5E21A6C1AE009CA245 /* AppDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		02E50A3D21A580EF009CA245 /* Main.storyboard */ = {
+		02E50A6221A6C1AE009CA245 /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				02E50A3E21A580EF009CA245 /* Base */,
+				02E50A6321A6C1AE009CA245 /* Base */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";
 		};
-		02E50A4221A580F1009CA245 /* LaunchScreen.storyboard */ = {
+		02E50A6721A6C1AF009CA245 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				02E50A4321A580F1009CA245 /* Base */,
+				02E50A6821A6C1AF009CA245 /* Base */,
 			);
 			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
@@ -175,7 +183,7 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
-		02E50A4821A580F1009CA245 /* Debug */ = {
+		02E50A6D21A6C1AF009CA245 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -234,7 +242,7 @@
 			};
 			name = Debug;
 		};
-		02E50A4921A580F1009CA245 /* Release */ = {
+		02E50A6E21A6C1AF009CA245 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -287,35 +295,35 @@
 			};
 			name = Release;
 		};
-		02E50A4B21A580F1009CA245 /* Debug */ = {
+		02E50A7021A6C1AF009CA245 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = LHX5GA8RPT;
-				INFOPLIST_FILE = LDGDCTimer/Info.plist;
+				INFOPLIST_FILE = LDGCDTimer/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = AleX.LDGDCTimer;
+				PRODUCT_BUNDLE_IDENTIFIER = AleX.LDGCDTimer;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
 		};
-		02E50A4C21A580F1009CA245 /* Release */ = {
+		02E50A7121A6C1AF009CA245 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = LHX5GA8RPT;
-				INFOPLIST_FILE = LDGDCTimer/Info.plist;
+				INFOPLIST_FILE = LDGCDTimer/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = AleX.LDGDCTimer;
+				PRODUCT_BUNDLE_IDENTIFIER = AleX.LDGCDTimer;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -324,25 +332,25 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		02E50A2F21A580EF009CA245 /* Build configuration list for PBXProject "LDGDCTimer" */ = {
+		02E50A5421A6C1AE009CA245 /* Build configuration list for PBXProject "LDGCDTimer" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				02E50A4821A580F1009CA245 /* Debug */,
-				02E50A4921A580F1009CA245 /* Release */,
+				02E50A6D21A6C1AF009CA245 /* Debug */,
+				02E50A6E21A6C1AF009CA245 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		02E50A4A21A580F1009CA245 /* Build configuration list for PBXNativeTarget "LDGDCTimer" */ = {
+		02E50A6F21A6C1AF009CA245 /* Build configuration list for PBXNativeTarget "LDGCDTimer" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				02E50A4B21A580F1009CA245 /* Debug */,
-				02E50A4C21A580F1009CA245 /* Release */,
+				02E50A7021A6C1AF009CA245 /* Debug */,
+				02E50A7121A6C1AF009CA245 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
-	rootObject = 02E50A2C21A580EF009CA245 /* Project object */;
+	rootObject = 02E50A5121A6C1AE009CA245 /* Project object */;
 }
