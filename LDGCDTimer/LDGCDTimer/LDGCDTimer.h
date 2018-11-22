@@ -23,12 +23,13 @@ NS_ASSUME_NONNULL_BEGIN
 
 /**
  创建并启动一个GCD timer对象。
- 该对象时单例。
+ 该对象是单例。
  每次重新赋值会先取消上次的timer。
-
+ 如果要回到主线程，需自行处理
+ 
  @param interval 循环时间间隔
  @param delay 首次执行的延迟
- @param circleAction 每次循环的执行事件
+ @param circleAction 每次循环的执行事件，如果要回到主线程，需自行处理
  */
 + (void)runShareTimerWithInteval:(CGFloat)interval afterDelay:(CGFloat)delay action:(dispatch_block_t)circleAction;
 
