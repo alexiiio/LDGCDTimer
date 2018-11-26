@@ -10,8 +10,19 @@
 #import <UIKit/UIKit.h>
 
 NS_ASSUME_NONNULL_BEGIN
+typedef NS_ENUM(NSInteger, LDGCDTimerState) {
+    LDGCDTimerStateUnstarted = 0,
+    LDGCDTimerStateRunning,
+    LDGCDTimerStateSuspend,
+    LDGCDTimerStateInvalid
+};
 
 @interface LDGCDTimer : NSObject
+
+/**
+ 定时器状态
+ */
+@property(nonatomic,assign)LDGCDTimerState timerState;
 
 /**
  单例timer，无需强引用对象。
@@ -66,6 +77,17 @@ NS_ASSUME_NONNULL_BEGIN
  
  */
 - (void)runTimerWithInteval:(CGFloat)interval afterDelay:(CGFloat)delay untilDate:(NSDate *)untilDate action:(dispatch_block_t)circleAction;
+
+/**
+ 暂停timer
+ */
+- (void)suspendTimer;
+
+/**
+  恢复或启动timer
+ */
+- (void)resumeTimer;
+
 /**
  取消并销毁timer
  */

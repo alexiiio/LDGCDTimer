@@ -8,6 +8,9 @@
 
 #import "LDGCDTimer.h"
 
+
+
+
 @interface LDGCDTimer ()
 @property(nonatomic,strong)dispatch_source_t timer;
 @end
@@ -46,7 +49,8 @@
         circleAction();
     });
     //启动源
-    dispatch_resume(self.timer);
+    [self resumeTimer];
+
 }
 - (void)runTimerWithInteval:(CGFloat)interval afterDelay:(CGFloat)delay circleCount:(NSUInteger)circleCount action:(dispatch_block_t)circleAction {
     //全局队列    默认优先级
@@ -66,7 +70,7 @@
         }
     });
     //启动源
-    dispatch_resume(self.timer);
+    [self resumeTimer];
 }
 - (void)runTimerWithInteval:(CGFloat)interval afterDelay:(CGFloat)delay untilDate:(NSDate *)untilDate action:(dispatch_block_t)circleAction {
     //全局队列    默认优先级
@@ -86,12 +90,26 @@
         }
     });
     //启动源
-    dispatch_resume(self.timer);
+    [self resumeTimer];
+}
+
+- (void)suspendTimer {
+    if (self.timerState == LDGCDTimerStateRunning) {
+        dispatch_suspend(self.timer);
+        self.timerState = LDGCDTimerStateSuspend;
+    }
+}
+- (void)resumeTimer {
+    if (self.timerState == LDGCDTimerStateUnstarted || self.timerState == LDGCDTimerStateSuspend ) {
+        dispatch_resume(self.timer);
+        self.timerState = LDGCDTimerStateRunning;
+    }
 }
 - (void)cancelTimer {
     if (self.timer) {
         dispatch_source_cancel(self.timer);
         self.timer = nil;
+        self.timerState = LDGCDTimerStateInvalid;
     }
 }
 
@@ -100,5 +118,6 @@
         dispatch_source_cancel(timer);
     }
     _timer = timer;
+    self.timerState = LDGCDTimerStateUnstarted;
 }
 @end
