@@ -8,7 +8,7 @@
 
 #import "LDGCDTimer.h"
 
-
+#import <objc/runtime.h>
 
 
 @interface LDGCDTimer ()
