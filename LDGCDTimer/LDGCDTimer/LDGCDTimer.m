@@ -8,7 +8,7 @@
 
 #import "LDGCDTimer.h"
 
-#import <objc/runtime.h>
+
 
 
 @interface LDGCDTimer ()
@@ -27,7 +27,6 @@
 
 + (void)runShareTimerWithInteval:(CGFloat)interval afterDelay:(CGFloat)delay action:(dispatch_block_t)circleAction {
     LDGCDTimer *shareTimer = [LDGCDTimer shareTimer];
-    [shareTimer cancelTimer];
     [shareTimer runTimerWithInteval:interval afterDelay:delay action:circleAction];
 }
 
