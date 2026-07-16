@@ -26,8 +26,12 @@
 
 
 + (void)runShareTimerWithInteval:(CGFloat)interval afterDelay:(CGFloat)delay action:(dispatch_block_t)circleAction {
+    [LDGCDTimer runShareTimerWithInteval:interval afterDelay:delay mainQueue:NO action:circleAction];
+}
+
++ (void)runShareTimerWithInteval:(CGFloat)interval afterDelay:(CGFloat)delay mainQueue:(BOOL)mainQueue action:(dispatch_block_t)circleAction {
     LDGCDTimer *shareTimer = [LDGCDTimer shareTimer];
-    [shareTimer runTimerWithInteval:interval afterDelay:delay action:circleAction];
+    [shareTimer runTimerWithInteval:interval afterDelay:delay mainQueue:mainQueue action:circleAction];
 }
 
 + (void)cancelShareTimer {
@@ -38,6 +42,10 @@
 
 
 - (void)runTimerWithInteval:(CGFloat)interval afterDelay:(CGFloat)delay action:(dispatch_block_t)circleAction {
+    [self runTimerWithInteval:interval afterDelay:delay mainQueue:NO action:circleAction];
+}
+
+- (void)runTimerWithInteval:(CGFloat)interval afterDelay:(CGFloat)delay mainQueue:(BOOL)mainQueue action:(dispatch_block_t)circleAction {
     if (![self isValidTimerInterval:interval delay:delay action:circleAction]) {
         return;
     }
@@ -49,15 +57,17 @@
     dispatch_source_set_timer(self.timer, dispatch_walltime(NULL, NSEC_PER_SEC * delay), NSEC_PER_SEC * interval, 0);
     //设置响应dispatch源事件的block，在dispatch源指定的队列上运行
     dispatch_source_set_event_handler(self.timer, ^{
-        dispatch_async(dispatch_get_main_queue(), ^{
-            circleAction();
-        });
+        [self performTimerAction:circleAction onMainQueue:mainQueue];
     });
     //启动源
     [self resumeTimer];
 
 }
 - (void)runTimerWithInteval:(CGFloat)interval afterDelay:(CGFloat)delay circleCount:(NSUInteger)circleCount action:(dispatch_block_t)circleAction {
+    [self runTimerWithInteval:interval afterDelay:delay circleCount:circleCount mainQueue:NO action:circleAction];
+}
+
+- (void)runTimerWithInteval:(CGFloat)interval afterDelay:(CGFloat)delay circleCount:(NSUInteger)circleCount mainQueue:(BOOL)mainQueue action:(dispatch_block_t)circleAction {
     if (![self isValidTimerInterval:interval delay:delay action:circleAction] || circleCount == 0) {
         return;
     }
@@ -71,18 +81,20 @@
     __block NSInteger count = 0;
     __weak __typeof(&*self)weakSelf = self;
     dispatch_source_set_event_handler(self.timer, ^{
-        dispatch_async(dispatch_get_main_queue(), ^{
-            circleAction();
-            count++;
-            if (count == circleCount) {
-                [weakSelf cancelTimer];
-            }
-        });
+        count++;
+        [weakSelf performTimerAction:circleAction onMainQueue:mainQueue];
+        if (count >= circleCount) {
+            [weakSelf cancelTimer];
+        }
     });
     //启动源
     [self resumeTimer];
 }
 - (void)runTimerWithInteval:(CGFloat)interval afterDelay:(CGFloat)delay untilDate:(NSDate *)untilDate action:(dispatch_block_t)circleAction {
+    [self runTimerWithInteval:interval afterDelay:delay untilDate:untilDate mainQueue:NO action:circleAction];
+}
+
+- (void)runTimerWithInteval:(CGFloat)interval afterDelay:(CGFloat)delay untilDate:(NSDate *)untilDate mainQueue:(BOOL)mainQueue action:(dispatch_block_t)circleAction {
     if (![self isValidTimerInterval:interval delay:delay action:circleAction] || !untilDate) {
         return;
     }
@@ -97,7 +109,7 @@
     dispatch_source_set_event_handler(self.timer, ^{
         NSComparisonResult result = [[NSDate date] compare:untilDate];
         if (result == NSOrderedAscending) {
-            circleAction();
+            [weakSelf performTimerAction:circleAction onMainQueue:mainQueue];
         }else{
             [weakSelf cancelTimer];
         }
@@ -136,6 +148,14 @@
 
 - (BOOL)isValidTimerInterval:(CGFloat)interval delay:(CGFloat)delay action:(dispatch_block_t)circleAction {
     return interval > 0 && delay >= 0 && circleAction;
+}
+
+- (void)performTimerAction:(dispatch_block_t)circleAction onMainQueue:(BOOL)mainQueue {
+    if (mainQueue) {
+        dispatch_async(dispatch_get_main_queue(), circleAction);
+    } else {
+        circleAction();
+    }
 }
 
 - (void)cancelDispatchTimer:(dispatch_source_t)timer state:(LDGCDTimerState)state {
