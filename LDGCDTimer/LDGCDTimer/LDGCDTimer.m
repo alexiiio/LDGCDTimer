@@ -54,7 +54,7 @@
     //定时器模式  事件源
     self.timer = dispatch_source_create(DISPATCH_SOURCE_TYPE_TIMER, 0, 0, quene);
     //NSEC_PER_SEC是秒，＊1是每秒
-    dispatch_source_set_timer(self.timer, dispatch_walltime(NULL, NSEC_PER_SEC * delay), NSEC_PER_SEC * interval, 0);
+    dispatch_source_set_timer(self.timer, dispatch_time(DISPATCH_TIME_NOW, NSEC_PER_SEC * delay), NSEC_PER_SEC * interval, 0);
     //设置响应dispatch源事件的block，在dispatch源指定的队列上运行
     dispatch_source_set_event_handler(self.timer, ^{
         [self performTimerAction:circleAction onMainQueue:mainQueue];
@@ -76,7 +76,7 @@
     //定时器模式  事件源
     self.timer = dispatch_source_create(DISPATCH_SOURCE_TYPE_TIMER, 0, 0, quene);
     //NSEC_PER_SEC是秒，＊1是每秒
-    dispatch_source_set_timer(self.timer, dispatch_walltime(NULL, NSEC_PER_SEC * delay), NSEC_PER_SEC * interval, 0);
+    dispatch_source_set_timer(self.timer, dispatch_time(DISPATCH_TIME_NOW, NSEC_PER_SEC * delay), NSEC_PER_SEC * interval, 0);
     //设置响应dispatch源事件的block，在dispatch源指定的队列上运行
     __block NSInteger count = 0;
     __weak __typeof(&*self)weakSelf = self;
@@ -103,7 +103,7 @@
     //定时器模式  事件源
     self.timer = dispatch_source_create(DISPATCH_SOURCE_TYPE_TIMER, 0, 0, quene);
     //NSEC_PER_SEC是秒，＊1是每秒
-    dispatch_source_set_timer(self.timer, dispatch_walltime(NULL, NSEC_PER_SEC * delay), NSEC_PER_SEC * interval, 0);
+    dispatch_source_set_timer(self.timer, dispatch_time(DISPATCH_TIME_NOW, NSEC_PER_SEC * delay), NSEC_PER_SEC * interval, 0);
     //设置响应dispatch源事件的block，在dispatch源指定的队列上运行
     __weak __typeof(&*self)weakSelf = self;
     dispatch_source_set_event_handler(self.timer, ^{
